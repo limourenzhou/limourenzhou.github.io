@@ -79,17 +79,17 @@
 
 
 
-<meta name="description" content="webDeveloper for beginners ​       这是一篇记录了我学习Web基础过程的文章，其实也没有什么其他的目标或者理想，就是单纯的想要利用假期开发出一个属于自己的一个小成果吧。">
+<meta name="description" content="webDeveloper for beginners​       这是一篇记录了我学习Web基础过程的文章，其实也没有什么其他的目标或者理想，就是单纯的想要利用假期开发出一个属于自己的一个小成果吧。 按照mdn的帮助文档来学习 互联网的组成： HTML语言的内容： CSS： Javascript 网页框架：  从0开始独立完成企业级java电商网站服务端开发： linux环境配置方面： 对vmw">
 <meta property="og:type" content="article">
 <meta property="og:title" content="webDeveloper">
 <meta property="og:url" content="http://yoursite.com/2020/01/29/webDeveloper/index.html">
 <meta property="og:site_name" content="limouren">
-<meta property="og:description" content="webDeveloper for beginners ​       这是一篇记录了我学习Web基础过程的文章，其实也没有什么其他的目标或者理想，就是单纯的想要利用假期开发出一个属于自己的一个小成果吧。">
+<meta property="og:description" content="webDeveloper for beginners​       这是一篇记录了我学习Web基础过程的文章，其实也没有什么其他的目标或者理想，就是单纯的想要利用假期开发出一个属于自己的一个小成果吧。 按照mdn的帮助文档来学习 互联网的组成： HTML语言的内容： CSS： Javascript 网页框架：  从0开始独立完成企业级java电商网站服务端开发： linux环境配置方面： 对vmw">
 <meta property="og:locale" content="zh-Hans-CN">
-<meta property="og:updated_time" content="2020-01-29T09:13:42.965Z">
+<meta property="og:updated_time" content="2020-02-15T15:45:47.556Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="webDeveloper">
-<meta name="twitter:description" content="webDeveloper for beginners ​       这是一篇记录了我学习Web基础过程的文章，其实也没有什么其他的目标或者理想，就是单纯的想要利用假期开发出一个属于自己的一个小成果吧。">
+<meta name="twitter:description" content="webDeveloper for beginners​       这是一篇记录了我学习Web基础过程的文章，其实也没有什么其他的目标或者理想，就是单纯的想要利用假期开发出一个属于自己的一个小成果吧。 按照mdn的帮助文档来学习 互联网的组成： HTML语言的内容： CSS： Javascript 网页框架：  从0开始独立完成企业级java电商网站服务端开发： linux环境配置方面： 对vmw">
 
 
 
@@ -361,8 +361,71 @@
       
 
       
-        <p>webDeveloper for beginners</p>
-<p>​       这是一篇记录了我学习Web基础过程的文章，其实也没有什么其他的目标或者理想，就是单纯的想要利用假期开发出一个属于自己的一个小成果吧。</p>
+        <h1 id="webDeveloper-for-beginners"><a href="#webDeveloper-for-beginners" class="headerlink" title="webDeveloper for beginners"></a>webDeveloper for beginners</h1><p>​       这是一篇记录了我学习Web基础过程的文章，其实也没有什么其他的目标或者理想，就是单纯的想要利用假期开发出一个属于自己的一个小成果吧。</p>
+<h2 id="按照mdn的帮助文档来学习"><a href="#按照mdn的帮助文档来学习" class="headerlink" title="按照mdn的帮助文档来学习"></a>按照mdn的帮助文档来学习</h2><ol>
+<li>互联网的组成：</li>
+<li>HTML语言的内容：</li>
+<li>CSS：</li>
+<li>Javascript</li>
+<li>网页框架：</li>
+</ol>
+<h2 id="从0开始独立完成企业级java电商网站服务端开发："><a href="#从0开始独立完成企业级java电商网站服务端开发：" class="headerlink" title="从0开始独立完成企业级java电商网站服务端开发："></a>从0开始独立完成企业级java电商网站服务端开发：</h2><ol>
+<li><h3 id="linux环境配置方面："><a href="#linux环境配置方面：" class="headerlink" title="linux环境配置方面："></a>linux环境配置方面：</h3><ol>
+<li><p>对vmware的认识，在这里需要重点介绍的是vmware网络状态设置的地方，有着几个选项，分别是：桥接模式、NAT模式、Host-only模式之类。桥接模式，就是直接连接物理网络，它拥有与主机上系统通信的能力，以及远程通信的能力。</p>
+</li>
+<li><p>接下来是Xshell的使用，它相当于一个终端模拟设备，</p>
+</li>
+<li><p>然后是linux的一些知识，安装的是CentOS 6.8版本，来源是阿里云，所以我从developer.aliyun.com网站上找到配置路径，按照操作逐步完成。</p>
+</li>
+<li><p>初次注册的用户不在sudoer目录里，因此配置过程中各种受限。通过谷歌，我首先找到了一些对于root用户的描述，因而我重启CentOS，然后选择使用root用户登陆，密码我输入的是最初申请的limouren用户的密码。然后打开terminal,输入visudo命令，可以打开并且编辑修改/etc/sudoers配置文件，我的电脑上是默认使用vim打开的，然后找到一行 root ALL=(ALL)ALL，在它的下一行输入limouren ALL=(ALL)ALL。其中limouren为你要添加root权限的用户的username。</p>
+</li>
+<li><p>关于vim的使用，a b c：切换到编辑模式 Esc：切换到阅读模式  :wq  ：一个退出命令</p>
+</li>
+</ol>
+</li>
+</ol>
+<ol start="6">
+<li><p>jdk的安装</p>
+<p>首先我找到了一个jdk-7u80-linux-x64.rpm的下载链接XXXX，然后打开Xshell，</p>
+<p>下载命令：wget XXXX 。wget 命令就是从链接下载文件，yum命令是从下载源下载文件。</p>
+<p>安装命令：rpm -qa | grep jdk  检测是否有系统原来安装的open jdk</p>
+<p>sudo chmod 777 jdk-7u80-linux-x64.rpm   赋予全开权限</p>
+<p> sudo rpm -ivh jdk-7u80-linux-x64.rpm  安装jdk</p>
+<p>配置命令：sudo vim /etc/profile  打开配置文件</p>
+<p>在最后面添加 </p>
+<p>export JAVA_HOME=/usr/local/jdk1.7.0_71<br>export CLASSPATH=.:$JAVA_HOME/lib/dt.jar:$JAVA_HOME/lib/tools.jar<br>export PATH=$JAVA_HOME/bin:$PATH</p>
+<p>source /etc/profile  使配置文件生效</p>
+<p>java -version 可以检验是否成功安装</p>
+<ol start="7">
+<li>Tomcat：Tomcat是Java EE运行的容器</li>
+</ol>
+<p>安装Tomcat之前需要安装好jdk,因为启动Tomcat需要用到jdk。</p>
+<p>下载  wget XXX      XXX为下载路径，如果有签名限制则需要从下载内容那里复制。</p>
+<p>解压缩 tar -zxvf apache-tomcat-7.0.73.tar.gz</p>
+<p>配置环境变量 sudo vim /etc/profile</p>
+<p>在最后面添加 CATALINA_HOME 为Tomcat的安装目录</p>
+<p>保存并且使配置生效 :wq  –&gt; source /etc/profile</p>
+<p>配置UTF-8：给${CATALINA_HOME}/conf/server.xml文件里的Connector节点添加URIEncoding=”UTF-8”</p>
+<p>我也不知道，把Tomcat安装到limouren 的下属文件夹是好还是坏，反正接下来一段时间都会使用limouren这个用户登录，先这样吧。</p>
+<p>Tomcat 启动：${CATALINA_HOME}/bin/startup.sh</p>
+<p>Tomcat 关闭：${CATALINA_HOME}/bin/shutdown.sh</p>
+<p>上面是linux下的命令，windows则是运行那两个.bat后缀的文件</p>
+<ol start="8">
+<li><p>Maven：Maven是Java项目的构建和管理工具</p>
+<p>下载 wget <a href="http://learning.happymmall.com/maven/apache-maven-3.0.5-bin.tar.gz" target="_blank" rel="noopener">http://learning.happymmall.com/maven/apache-maven-3.0.5-bin.tar.gz</a></p>
+<p>脱壳  tar -zxvf apache-maven-3.0.5-bin.tar.gz</p>
+<p>环境变量配置：需要注意该变量中可以使用的其他变量，必须放在该变量的前面，比如：export PATH=$JAVA_HOME/bin:$PATH:$MAVEN_HOME/bin</p>
+<p>PATH变量里面出现了MAVEN_HOME变量，则MAVEN_HOME变量必须写在PATH前面。</p>
+<p>Maven常用命令：</p>
+<p>清除命令： mvn clean</p>
+<p>编译命令：mvn compile</p>
+<p>打包命令：mvn package</p>
+<p>跳过单元测试：mvn clean package -Dmaven.test.skip=true</p>
+<p>9. </p>
+</li>
+</ol>
+</li>
+</ol>
 
       
     </div>
@@ -447,8 +510,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            Table of Contents
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            Overview
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope="" itemtype="http://schema.org/Person">
             
@@ -500,6 +572,22 @@
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#webDeveloper-for-beginners"><span class="nav-number">1.</span> <span class="nav-text">webDeveloper for beginners</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#按照mdn的帮助文档来学习"><span class="nav-number">1.1.</span> <span class="nav-text">按照mdn的帮助文档来学习</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#从0开始独立完成企业级java电商网站服务端开发："><span class="nav-number">1.2.</span> <span class="nav-text">从0开始独立完成企业级java电商网站服务端开发：</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#linux环境配置方面："><span class="nav-number">1.2.1.</span> <span class="nav-text">linux环境配置方面：</span></a></li></ol></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
